@@ -1,0 +1,19 @@
+# dependências e arquivos gerados
+node_modules/
+web/dist/
+web/dist-novo/
+runtime/
+WalletSetup*.exe
+*.exe.bak
+# dados nunca vão para o repositório
+*.db
+*.db-wal
+*.db-shm
+backups/
+*.log
+# arquivos temporários
+.antigo/
+_*.mjs
+*.tmp
+.DS_Store
+Thumbs.db
