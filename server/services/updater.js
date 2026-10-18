@@ -28,7 +28,7 @@ export function getRepo(db) {
   } catch {
     // fallback
   }
-  return 'Lukkzz11/Wallet';
+  return 'Lukkzz11/Wallet-';
 }
 
 export function setRepo(db, newRepo) {

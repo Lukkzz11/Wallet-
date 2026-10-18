@@ -195,7 +195,7 @@ function Updater() {
   const [repo, setRepo] = useState('');
   const [applying, setApplying] = useState(false);
   useEffect(() => {
-    get('/api/updater/status').then((s) => { setSt(s); setRepo(s.repo || 'Lukkzz11/Wallet'); }).catch(() => {});
+    get('/api/updater/status').then((s) => { setSt(s); setRepo(s.repo || 'Lukkzz11/Wallet-'); }).catch(() => {});
   }, []);
   const check = async () => {
     setChecking(true);
@@ -246,7 +246,7 @@ function Updater() {
       <p className="muted" style={{ marginBottom: 12 }}>O Wallet verifica novas versões diretamente do GitHub na inicialização, baixa os updates automaticamente e permite reiniciar com um clique.</p>
       <div className="filters" style={{ marginBottom: 16 }}>
         <Field label="Repositório no GitHub (usuario/repositorio)">
-          <input style={{ minWidth: 280 }} value={repo} onChange={(e) => setRepo(e.target.value)} placeholder="Lukkzz11/Wallet" />
+          <input style={{ minWidth: 280 }} value={repo} onChange={(e) => setRepo(e.target.value)} placeholder="Lukkzz11/Wallet-" />
         </Field>
         <button className="btn" style={{ alignSelf: 'flex-end' }} onClick={saveRepo}>Salvar repositório</button>
       </div>
